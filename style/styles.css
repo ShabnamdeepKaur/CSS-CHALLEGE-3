@@ -1,0 +1,140 @@
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+
+/* body content */
+body {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+/* headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rampart One', cursive;
+}
+
+h1 {
+    font-size: 3rem;
+
+}
+
+p:has(> a) {
+    text-align: center;
+}
+
+/* Layout & Apperance */
+
+header {
+    height: 15vw;
+    background-color: #FF8360;
+    color: #fff;
+
+    /* SET THE H1 IN THE CENTER */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-wrapper {
+    width: 95vw;
+    margin: 0 auto;
+    border: 2px solid #999;
+    padding: 1em;
+}
+
+/* SETTING THE WIDTH IMG PART */
+main section:nth-of-type(1) div {
+    flex: 1; /*========================FLEX WIDTH===========================*/
+}
+
+/*  */
+main section:nth-of-type(1) {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/* ========================= */
+main section:nth-of-type(1) div:nth-child(1),
+main section:nth-of-type(1) div:nth-child(2) {
+    display: block;
+}
+
+/* section */
+main section>div+p {
+    background-color: #3CDBD3;
+    padding: 1em;
+    font-size: small;
+    font-weight: bold;
+
+    /* SETTING THE WIDTH OF BLUE-PARAGRAPH */
+    flex: 3;/*========================FLEX WIDTH===========================*/
+}
+
+main section:nth-of-type(2) p {
+    background-color: #E8E288;
+    padding: 1em;
+    margin: 5px;
+    font-size: small;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+main section:nth-of-type(2) {
+    display: flex;
+}
+
+main section:nth-of-type(2) p:nth-of-type(2),
+main section:nth-of-type(2) p:nth-of-type(3) {
+    flex: 1; /*========================FLEX WIDTH===========================*/
+}
+
+main section:nth-of-type(2) p:nth-of-type(1) {
+    flex: 3; /*========================FLEX WIDTH===========================*/
+
+}
+
+/* footer */
+/* ===================================================== */
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* ====================================================== */
+
+footer p,
+footer a {
+    background-color: #7DCE82;
+    color: #fff;
+    padding: 2em;
+    border: 2px solid #fff;
+}
+
+footer p {
+    text-align: center;
+    flex: 8; /*========================FLEX WIDTH===========================*/
+}
+
+footer a {
+    background-color: #FF8360;
+    flex: 1; /*========================FLEX WIDTH===========================*/
+}
+
+footer a:hover {
+    background-color: #9C528B;
+}
